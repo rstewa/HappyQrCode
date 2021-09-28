@@ -109,7 +109,7 @@ void process_qrcode(char *fileName, char *output_fn, string arg, string val)
   {
     // convert the image to .eps and resize it
     fn2 = val + ".eps";
-    string cmd = "convert " + val + " -resize 64x64 " + fn2;
+    string cmd = "convert " + val + " -resize 32x32 " + fn2;
     system(cmd.c_str());
   }
 
